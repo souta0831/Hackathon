@@ -16,12 +16,12 @@ public class PedalManager : MonoBehaviour
     private float _start_speed = 10;
     [SerializeField]
     private float _max_speed=100;
+
     [SerializeField]
     private float _flame_par_down_speed = 0.1f;
     [SerializeField]
     float AddSpeed=10;
-    [SerializeField]
-    private PedarState _start_pedar;
+
 
     private float _now_speed;
 
@@ -41,6 +41,31 @@ public class PedalManager : MonoBehaviour
         _now_speed = Mathf.Max(_now_speed, 0);
 
     }
+
+    public void RightPedalButton()
+    {
+        if (PedarState.R == _now_Pedar)
+        {
+            AddPedar();
+        }
+    }
+
+    public void LeftPedalButton()
+    {
+        if (PedarState.L == _now_Pedar)
+        {
+            AddPedar();
+        }
+    }
+
+
+    void AddPedar()
+    {
+        _now_speed += AddSpeed;
+        ChangeState();
+        //押せるボタンを変更する
+
+    }
    void ChangeState()
     {
         if (_now_Pedar == PedarState.R)
@@ -54,19 +79,7 @@ public class PedalManager : MonoBehaviour
         }
     }
 
-    public void OnAddSpeed()
-    {
-        _now_speed += AddSpeed;
-        ChangeState();
-        //押せるボタンを変更する
-
-    }
-
     public float GetNowSpeed(){ return _now_speed;}
 
     public float GetMaxSpeed() { return _max_speed; }
-
-    public PedarState GetNowPedar() { return _now_Pedar; }
-
-    public PedarState GetStartPedar() { return _start_pedar; }
 }
