@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stage_move : MonoBehaviour
+public class town_move : MonoBehaviour
 {
     GameObject speed_manager;
     PedalManager pedal_script;
-    float stage_speed;
+    float town_speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +18,10 @@ public class stage_move : MonoBehaviour
     void Update()
     {
         pedal_script.GetNowSpeed();
-        stage_speed = pedal_script.GetNowSpeed() / 1000;
-        transform.position -= transform.forward * stage_speed; //new Vector3(0f, 0f, stage_speed);
+        town_speed = pedal_script.GetNowSpeed() / 1000;
+        transform.position -= transform.forward * town_speed;
 
-        if (transform.position.z <= -10f)
+        if (transform.position.z <= -50f)
         {
             Destroy(gameObject);
         }
