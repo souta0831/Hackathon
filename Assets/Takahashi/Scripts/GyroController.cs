@@ -2,25 +2,32 @@
 
 public class GyroController : MonoBehaviour
 {
+
     //重力の強さ
     [SerializeField] private float gravity = 1f;
+
     //移動範囲(真ん中からの最大距離)
     [SerializeField]
     private float maxMoveRange = 3f;
+
     //スピードの倍率
     [SerializeField]
     [Range (0.1f, 1f)]
     private float speedMag = 0.5f;
+
     //回転速度の倍率
     [SerializeField]
     [Range (0.001f, 1f)]
     private float rotationMag = 0.5f;
+
     //傾きを戻そうとする係数
     [SerializeField]
     [Range (0.001f, 1f)]
     private float fixRotationCoe = 0.05f;
+
     //物理挙動
     private Rigidbody rb;
+
     //デバイスの傾きのZ軸を格納する変数
     private float deviceRotZ, playerRotZ;
 
