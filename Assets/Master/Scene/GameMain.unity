@@ -492,7 +492,7 @@ PrefabInstance:
     - target: {fileID: 8152865711173132873, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8152865711173132873, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
@@ -534,55 +534,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132873, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132873, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132873, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: maxMoveRange
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: rotationMag
-      value: 0.065
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: speedMag
-      value: 0.111
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
-        type: 3}
-      propertyPath: fixRotationCoe
-      value: 0.071
-      objectReference: {fileID: 0}
     - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
       propertyPath: gravity
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 8152865711173132874, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
+    - target: {fileID: 2993484818584575485, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
-      propertyPath: m_Constraints
-      value: 60
+      propertyPath: animSpeed
+      value: 0.13
       objectReference: {fileID: 0}
-    - target: {fileID: 8152865711035927443, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
+    - target: {fileID: 8370030480146887100, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
       propertyPath: m_Radius
-      value: 0.1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370030480146887100, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
+        type: 3}
+      propertyPath: m_Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370030480146887100, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dccd4ef4c249a4ad2b889acf08a45bd0, type: 3}

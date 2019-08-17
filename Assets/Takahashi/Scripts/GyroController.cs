@@ -99,6 +99,17 @@ public class GyroController : MonoBehaviour
            0,
            0
         );
+        //もしも、移動範囲を超えていたら戻す
+        if (transform.position.x > maxMoveRange)
+        {
+            transform.position = new Vector3 (maxMoveRange - 0.01f, 0, 0);
+            rb.velocity = Vector3.zero;
+        }
+        else if (transform.position.x < -maxMoveRange)
+        {
+            transform.position = new Vector3 (-maxMoveRange + 0.01f, 0, 0);
+            rb.velocity = Vector3.zero;
+        }
     }
 
     //角度が180°より大きいときは、-180〜0°に変換

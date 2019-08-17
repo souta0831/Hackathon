@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 3469374702352591361}
   - component: {fileID: 4821662070839384106}
   - component: {fileID: 8245042883079870847}
-  - component: {fileID: 7409187999260305282}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Untagged
@@ -329,20 +328,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7409187999260305282
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3863569631352949535}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 7162a3c2adb484161b5ab8284721283e, type: 3}
 --- !u!1 &4698918670891982234
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3238499678102635731}
+  - component: {fileID: 7586926454736586578}
   m_Layer: 0
   m_Name: Barike-do
   m_TagString: Untagged
@@ -513,6 +499,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7586926454736586578
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154345393992223784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.39694268, z: 0.2}
+  m_Center: {x: 0, y: 0.19847134, z: 0}
 --- !u!1 &8566224173086954902
 GameObject:
   m_ObjectHideFlags: 0
