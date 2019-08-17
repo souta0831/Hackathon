@@ -21,7 +21,10 @@ public class ResultDirector : MonoBehaviour
     public float speed = 0.005f;
     float alfa;
     float red, green, blue;
+
     int fadeout_frag;
+    bool se_flag;
+
     AudioSource audioSource1;
     AudioSource audioSource2;
 
@@ -33,6 +36,7 @@ public class ResultDirector : MonoBehaviour
         blue = panel.GetComponent<Image>().color.b;
 
         fadeout_frag = 0;
+        se_flag = true;
 
         titleButton.SetActive(false);
         continueButton.SetActive(false);
@@ -45,19 +49,24 @@ public class ResultDirector : MonoBehaviour
 
     void Update()
     {
-        //倒れたときの処理
-        if (Input.GetMouseButtonDown(0))
-        {
-            titleButton.SetActive(true);
-            continueButton.SetActive(true);
-            panel2.SetActive(true);
-            moveText.SetActive(true);
-            gameBgm.Stop();
 
-            audioSource1.PlayOneShot(gameoverSE);
+            //倒れたときの処理
+            if (Input.GetMouseButtonDown(0))
+            {
+                titleButton.SetActive(true);
+                continueButton.SetActive(true);
+                panel2.SetActive(true);
+                moveText.SetActive(true);
+                gameBgm.Stop();
 
-            fadeout_frag = 1;
-        }
+            if (se_flag == true)
+            {
+                audioSource1.PlayOneShot(gameoverSE);
+                se_flag = false;
+            }
+
+                fadeout_frag = 1;
+            }
 
         if (fadeout_frag == 1)
         {
