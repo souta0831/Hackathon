@@ -8,22 +8,22 @@ public class stage_move : MonoBehaviour
     PedalManager pedal_script;
     float stage_speed;
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-        speed_manager = GameObject.Find("SpeedManager");
-        pedal_script = speed_manager.GetComponent<PedalManager>();
+        speed_manager = GameObject.Find ("SpeedManager");
+        pedal_script = speed_manager.GetComponent<PedalManager> ();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        pedal_script.GetNowSpeed();
-        stage_speed = pedal_script._now_speed / 1000;
+        pedal_script.GetNowSpeed ();
+        stage_speed = pedal_script.GetNowSpeed () / 1000;
         transform.position -= transform.forward * stage_speed; //new Vector3(0f, 0f, stage_speed);
 
         if (transform.position.z <= -10f)
         {
-            Destroy(gameObject);
+            Destroy (gameObject);
         }
     }
 }
