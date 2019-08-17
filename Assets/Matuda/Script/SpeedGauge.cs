@@ -12,8 +12,8 @@ public class SpeedGauge : MonoBehaviour
     [SerializeField]
     private PedalManager _pedal_manager;
 
-    public float _now_speed = 0;
-    public float _max_speed = 0;
+    private float _now_speed = 0;
+    private float _max_speed = 0;
 
     void Start()
     {
