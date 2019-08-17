@@ -11,34 +11,37 @@ public enum PedarState
 public class PedalManager : MonoBehaviour
 {
     //[System.NonSerialized]
-    [SerializeField]
-    private float _now_speed;
+
     [SerializeField]
     private float _start_speed = 10;
     [SerializeField]
     private float _max_speed=100;
 
     [SerializeField]
-    Slider _hp_gauge;
-
+    private float _flame_par_down_speed = 0.1f;
     [SerializeField]
     float AddSpeed=10;
+
+
+    private float _now_speed;
 
     private PedarState _now_Pedar = PedarState.R;
 
     void Start()
     {
         _now_speed = _start_speed;
-        _hp_gauge = GetComponent<Slider>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        _now_speed -= 0.1f;
-        Mathf.Min(_now_speed, _max_speed);
+        _now_speed -= _flame_par_down_speed;
+        _now_speed=Mathf.Min(_now_speed, _max_speed);
+        _now_speed = Mathf.Max(_now_speed, 0);
+
     }
+
     public void RightPedalButton()
     {
         if (PedarState.R == _now_Pedar)
