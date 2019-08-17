@@ -117,6 +117,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7442831008649144232}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,21 +177,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
 --- !u!4 &6296463638587186475 stripped
@@ -202,6 +192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7442831008649144232}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,21 +252,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
 --- !u!4 &8633216672203147385 stripped
@@ -287,6 +267,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7442831008649144232}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -342,21 +327,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
 --- !u!4 &7436314895715317331 stripped
@@ -372,6 +342,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7442831008649144232}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -427,21 +402,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
 --- !u!4 &7436314896978502988 stripped
@@ -457,6 +417,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7442831008649144232}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -511,21 +476,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}

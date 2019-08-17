@@ -113,6 +113,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2299707745651983502}
     m_Modifications:
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -167,21 +172,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube
-      objectReference: {fileID: 0}
-    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
