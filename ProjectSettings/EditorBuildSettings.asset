@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DE.unity
-    guid: e5bc22303cb6ccf4db9f38c917d5c0a6
-  - enabled: 1
-    path: Assets/Satou/OP.unity
-    guid: 04db58541ad41224281cf84362a38f22
+    path: Assets/Takahashi/Scenes/TakahashiScene.unity
+    guid: e9675222860ee4f7f9b867ea3bc1dbd2
   m_configObjects: {}
