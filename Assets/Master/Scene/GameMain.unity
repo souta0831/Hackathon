@@ -112,75 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &340864703
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 320456862113059731, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_Name
-      value: stage_A
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2299707745651983502, guid: 59fdfdfea417595468a0ec07537028b1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 59fdfdfea417595468a0ec07537028b1, type: 3}
 --- !u!1 &392429682
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,28 +206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eddb2012d9a2584fb867f01a5de8044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &419818011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6344529295113942584, guid: b17112f53c7517a48956f57211eabe98,
-    type: 3}
-  m_PrefabInstance: {fileID: 6344529294761843407}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &419818016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419818011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57b440cc0e0a4f4caea6a8071d26416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _on: {fileID: 21300000, guid: 8e0da3d9ba14fca4e821411010792b78, type: 3}
-  _off: {fileID: 21300000, guid: 8159fa97478ee5e46bdbb8d434366ba0, type: 3}
-  _my_pedar_state: 1
-  manager: {fileID: 419662531}
 --- !u!1 &745169318
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,28 +272,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1197977460 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6344529293499844261, guid: b17112f53c7517a48956f57211eabe98,
-    type: 3}
-  m_PrefabInstance: {fileID: 6344529294761843407}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1197977465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197977460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57b440cc0e0a4f4caea6a8071d26416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _on: {fileID: 21300000, guid: fffb71cbb7fe30e41a1466f43f0f37b2, type: 3}
-  _off: {fileID: 21300000, guid: ba1b192a8963c4b4bb64ccc21b8d9e09, type: 3}
-  _my_pedar_state: 0
-  manager: {fileID: 419662531}
 --- !u!1 &1833304991
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +367,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2030150591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaee3e16015109544a8740d6ee27ff92, type: 3}
+  m_Script: {fileID: 11500000, guid: b7e2237be7b9a4d8f89f88b5ba11f100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle_list: []
@@ -838,11 +725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1197977465}
+      objectReference: {fileID: 419662531}
     - target: {fileID: 6344529293499844258, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Click
+      value: OnAddSpeed
       objectReference: {fileID: 0}
     - target: {fileID: 6344529294833010000, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
@@ -939,11 +826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 419818016}
+      objectReference: {fileID: 419662531}
     - target: {fileID: 6344529295113942582, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Click
+      value: OnAddSpeed
       objectReference: {fileID: 0}
     - target: {fileID: 6344529295043251890, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
