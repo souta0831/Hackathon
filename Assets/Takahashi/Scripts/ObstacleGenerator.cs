@@ -18,6 +18,8 @@ public class ObstacleGenerator : MonoBehaviour
     GameObject stage_I;
     GameObject stage_J;
 
+    int num = 10;
+
     // Start is called before the first frame update
     void Start ()
     {
@@ -33,8 +35,10 @@ public class ObstacleGenerator : MonoBehaviour
         stage_J = (GameObject)Resources.Load ("StagePattern/StageJ");
 
         Pattern_generator (0, 0);
-        Pattern_generator (Random.Range (1, 11), 10);
-        Pattern_generator (Random.Range (1, 11), 20);
+        for (int i = 1 ; i < num ; i++)
+        {
+            Pattern_generator (Random.Range (1, 10), i * 10);
+        }
     }
 
     // Update is called once per frame
@@ -100,9 +104,8 @@ public class ObstacleGenerator : MonoBehaviour
     {
         if (obstacle_list[0].transform.position.z <= -5f)
         {
-            Pattern_generator (Random.Range (0, 11), obstacle_list[2].transform.position.z + 10f);
+            Pattern_generator (Random.Range (0, 10), obstacle_list[num - 1].transform.position.z + 10f);
             obstacle_list.RemoveAt (0);
-            Debug.Log (obstacle_list[2].transform.position.z);
         }
     }
 
