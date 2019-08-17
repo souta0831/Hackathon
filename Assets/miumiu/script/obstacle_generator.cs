@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class obstacle_generator : MonoBehaviour
 {
-    public List<GameObject> pattern_list = new List<GameObject>();
+    public List<GameObject> obstacle_list = new List<GameObject>();
 
     GameObject obstacle;
     GameObject stage_A;
@@ -15,8 +15,6 @@ public class obstacle_generator : MonoBehaviour
     GameObject stage_F;
     GameObject stage_G;
     GameObject stage_H;
-
-    int pop_pattern;
 
     // Start is called before the first frame update
     void Start()
@@ -30,52 +28,69 @@ public class obstacle_generator : MonoBehaviour
         stage_G = (GameObject)Resources.Load("stage_G");
         stage_H = (GameObject)Resources.Load("stage_H");
 
-        pop_pattern = Random.Range(0, 7);
-        Pattern_generator();
+        Pattern_generator(0, 0);
+        Pattern_generator(Random.Range(1, 8), 10);
+        Pattern_generator(Random.Range(1, 8), 20);
     }
 
     // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-
+        Generator_obstacle();
     }
 
-    void Pattern_generator()
+    void Pattern_generator(int pop_pattern, float z)
     {
+
         switch (pop_pattern)
         {
             case 0:
-                obstacle = Instantiate(stage_A, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_A);
+                
                 break;
             case 1:
-                obstacle = Instantiate(stage_B, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_B);
+
                 break;
             case 2:
-                obstacle = Instantiate(stage_C, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_C);
+
                 break;
             case 3:
-                obstacle = Instantiate(stage_D, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_D);
+
                 break;
             case 4:
-                obstacle = Instantiate(stage_E, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_E);
+
                 break;
             case 5:
-                obstacle = Instantiate(stage_F, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_F);
+
                 break;
             case 6:
-                obstacle = Instantiate(stage_G, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_G);
+
                 break;
             case 7:
-                obstacle = Instantiate(stage_H, new Vector3(0f, 0f, 0f), transform.rotation);
-                pattern_list.Add(obstacle);
+                obstacle = Instantiate(stage_H);
+
                 break;
+        }
+
+        obstacle.transform.position = new Vector3(0f, 0f, z);
+
+        obstacle_list.Add(obstacle);
+
+    }
+
+    void Generator_obstacle()
+    {
+        if (obstacle_list[0].transform.position.z <= -5f)
+        {
+            Pattern_generator(Random.Range(0, 8), obstacle_list[2].transform.position.z + 10f);
+            obstacle_list.RemoveAt(0);
+            Debug.Log(obstacle_list[2].transform.position.z);
         }
     }
 
