@@ -5,12 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class SceneController2 : MonoBehaviour
 {
 
     // ボタンをクリックするとBattleSceneに移動します
     public void ButtonClicked()
     {
-        SceneManager.LoadScene("Satou/DE");
+        SceneManager.LoadScene("Satou/MAIN");
     }
 }
