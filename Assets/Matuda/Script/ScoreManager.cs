@@ -19,6 +19,6 @@ using UnityEngine.UI;
     void Update()
     {
         _now_score += Pedal.GetNowSpeed()/100 ;
-        DrawText.text = "スコア:" + (int)_now_score;
+        DrawText.text =  (int)_now_score+"m";
     }
 }
