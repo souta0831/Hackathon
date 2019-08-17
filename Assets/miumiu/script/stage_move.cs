@@ -13,6 +13,6 @@ public class stage_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(0f, 0f, -0.1f);
+        transform.position -= new Vector3(0f, 0f, 0.1f);
     }
 }

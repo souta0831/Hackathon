@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3838889818626567555}
   - component: {fileID: 3287011754101327759}
   - component: {fileID: 7039446632062713706}
+  - component: {fileID: 3599094875449795543}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: stage_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,6 +94,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3599094875449795543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320456862113059731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef24e9409e86b14bbbe47df286ff129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4061095004105374024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,11 +113,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2299707745651983502}
     m_Modifications:
-    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube
-      objectReference: {fileID: 0}
     - target: {fileID: 6722490691879920272, guid: e2525e33eb6fe03409e9c3d1e54a952e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -164,6 +172,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 3.333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 572679446516665432, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947066418570172997, guid: e2525e33eb6fe03409e9c3d1e54a952e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2525e33eb6fe03409e9c3d1e54a952e, type: 3}
