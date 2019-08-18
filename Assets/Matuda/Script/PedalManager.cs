@@ -22,23 +22,27 @@ public class PedalManager : MonoBehaviour
     float AddSpeed=10;
     [SerializeField]
     private PedarState _start_pedar;
-
+    [SerializeField]
+    GameManager _game_manager;
     private float _now_speed;
 
     private PedarState _now_Pedar = PedarState.R;
 
     void Start()
-    {
+    { 
         _now_speed = _start_speed;
     }
 
-    // Update is called once per frame
+    // Update is called once per fram
     void Update()
     {
 
         _now_speed -= _flame_par_down_speed;
         _now_speed=Mathf.Min(_now_speed, _max_speed);
         _now_speed = Mathf.Max(_now_speed, 0);
+
+        //
+        if (_game_manager.gameState == GameState.GAMEOVER) _now_speed = 0;
 
     }
    void ChangeState()
