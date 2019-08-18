@@ -10,6 +10,6 @@ public class ScoreText : MonoBehaviour
     public void OnStart()
     {
         _text = GetComponent<Text>();
-        _text.text = "結果発表:" + GameObject.Find("SpeedManager").GetComponent<ScoreManager>()._now_score.ToString() + "M";
+        _text.text = "スコア:" + GameObject.Find("SpeedManager").GetComponent<ScoreManager>()._now_score.ToString() + "M";
     }
 }
