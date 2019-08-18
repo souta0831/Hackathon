@@ -53,6 +53,8 @@ public class GyroController : MonoBehaviour
 #endif
         //左右移動の処理
         Move ();
+
+        CheckRotation ();
     }
 
     private void FixedUpdate ()
@@ -109,6 +111,14 @@ public class GyroController : MonoBehaviour
         {
             transform.position = new Vector3 (-maxMoveRange + 0.01f, 0, 0);
             rb.velocity = Vector3.zero;
+        }
+    }
+
+    private void CheckRotation ()
+    {
+        if(Mathf.Abs(playerRotZ) > 50f)
+        {
+            GameObject.Find ("GameManager").SendMessage ("OnGameOver");
         }
     }
 
