@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 3396841599633350903}
   - component: {fileID: 8462659775837484989}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: TitleFadeOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,11 +202,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3546369964976270846}
     m_Modifications:
-    - target: {fileID: 4883570170434024586, guid: 931354e6e47fe404480c424350169a83,
-        type: 3}
-      propertyPath: m_Name
-      value: TitleFadeOut
-      objectReference: {fileID: 0}
     - target: {fileID: 4883570170434024587, guid: 931354e6e47fe404480c424350169a83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -245,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 4883570170434024587, guid: 931354e6e47fe404480c424350169a83,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4883570170434024587, guid: 931354e6e47fe404480c424350169a83,
         type: 3}
@@ -311,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883570170434024586, guid: 931354e6e47fe404480c424350169a83,
+        type: 3}
+      propertyPath: m_Name
+      value: TitleFadeOut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 931354e6e47fe404480c424350169a83, type: 3}
