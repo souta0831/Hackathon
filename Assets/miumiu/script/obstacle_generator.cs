@@ -15,22 +15,35 @@ public class obstacle_generator : MonoBehaviour
     GameObject stage_F;
     GameObject stage_G;
     GameObject stage_H;
+    GameObject stage_I;
+    GameObject stage_J;
+    GameObject score_manager;
+    ScoreManager score_manager_script;
+    int num = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-        stage_A = (GameObject)Resources.Load("stage_A");
-        stage_B = (GameObject)Resources.Load("stage_B");
-        stage_C = (GameObject)Resources.Load("stage_C");
-        stage_D = (GameObject)Resources.Load("stage_D");
-        stage_E = (GameObject)Resources.Load("stage_E");
-        stage_F = (GameObject)Resources.Load("stage_F");
-        stage_G = (GameObject)Resources.Load("stage_G");
-        stage_H = (GameObject)Resources.Load("stage_H");
+        score_manager = GameObject.Find("SpeedManager");
+        score_manager_script = score_manager.GetComponent<ScoreManager>();
 
-        Pattern_generator(0, 0);
-        Pattern_generator(Random.Range(1, 8), 10);
-        Pattern_generator(Random.Range(1, 8), 20);
+        stage_A = (GameObject)Resources.Load("StagePattern/StageA");
+        stage_B = (GameObject)Resources.Load("StagePattern/StageB");
+        stage_C = (GameObject)Resources.Load("StagePattern/StageC");
+        stage_D = (GameObject)Resources.Load("StagePattern/StageD");
+        stage_E = (GameObject)Resources.Load("StagePattern/StageE");
+        stage_F = (GameObject)Resources.Load("StagePattern/StageF");
+        stage_G = (GameObject)Resources.Load("StagePattern/StageG");
+        stage_H = (GameObject)Resources.Load("StagePattern/StageH");
+        stage_I = (GameObject)Resources.Load("StagePattern/StageI");
+        stage_J = (GameObject)Resources.Load("StagePattern/StageJ");
+
+        Pattern_generator(Random.Range(0, 3), 10);
+
+        for (int i = 1; i < num; i++)
+        {
+            Pattern_generator(Random.Range(0, 3), i * 10 + 10);
+        }
     }
 
     // Update is called once per frame
@@ -39,14 +52,14 @@ public class obstacle_generator : MonoBehaviour
         Generator_obstacle();
     }
 
-    void Pattern_generator(int pop_pattern, float z)
+    void Pattern_generator(int pop_pattern, float z) // 障害物の生成
     {
 
         switch (pop_pattern)
         {
             case 0:
                 obstacle = Instantiate(stage_A);
-                
+
                 break;
             case 1:
                 obstacle = Instantiate(stage_B);
@@ -76,6 +89,14 @@ public class obstacle_generator : MonoBehaviour
                 obstacle = Instantiate(stage_H);
 
                 break;
+            case 8:
+                obstacle = Instantiate(stage_I);
+
+                break;
+            case 9:
+                obstacle = Instantiate(stage_J);
+
+                break;
         }
 
         obstacle.transform.position = new Vector3(0f, 0f, z);
@@ -84,13 +105,25 @@ public class obstacle_generator : MonoBehaviour
 
     }
 
-    void Generator_obstacle()
+    void Generator_obstacle() // 生成のパターン
     {
         if (obstacle_list[0].transform.position.z <= -5f)
         {
-            Pattern_generator(Random.Range(0, 8), obstacle_list[2].transform.position.z + 10f);
+
+            if (score_manager_script._now_score <= 500) // 500M以下の時
+            {
+                Pattern_generator(Random.Range(0, 3), obstacle_list[num - 1].transform.position.z + 10f);
+            }
+            else if (score_manager_script._now_score > 500 && score_manager_script._now_score <= 1000) // 501Mから1000Mまでの時
+            {
+                Pattern_generator(Random.Range(3, 6), obstacle_list[num - 1].transform.position.z + 10f);
+            }
+            else if (score_manager_script._now_score > 1000) // 1001M以上の時
+            {
+                Pattern_generator(Random.Range(3, 11), obstacle_list[num - 1].transform.position.z + 10f);
+            }
+
             obstacle_list.RemoveAt(0);
-            Debug.Log(obstacle_list[2].transform.position.z);
         }
     }
 
