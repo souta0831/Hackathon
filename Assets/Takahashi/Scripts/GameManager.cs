@@ -18,8 +18,7 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             gameState = GameState.GAMEOVER;
-            Instantiate (result);
-            Debug.Log ("Gamo");
+            result.SetActive (true);
         }
     }
 }
