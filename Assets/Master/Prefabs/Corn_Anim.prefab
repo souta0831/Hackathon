@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &5225780583878739017
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3219320437085597743}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 4d492805695f8442ca1d458058f7a0cd, type: 3}
 --- !u!1 &5721490316048734089
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4003815585750229172}
+  - component: {fileID: 1251842008687450036}
   m_Layer: 0
   m_Name: Corn_Anim
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1251842008687450036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5721490316048734089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.5, z: 0.3}
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1001 &3219320437085697671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,12 +117,6 @@ PrefabInstance:
 --- !u!4 &3219320437085563911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4d492805695f8442ca1d458058f7a0cd,
-    type: 3}
-  m_PrefabInstance: {fileID: 3219320437085697671}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3219320437085597743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100008, guid: 4d492805695f8442ca1d458058f7a0cd,
     type: 3}
   m_PrefabInstance: {fileID: 3219320437085697671}
   m_PrefabAsset: {fileID: 0}

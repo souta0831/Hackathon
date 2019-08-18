@@ -53,6 +53,8 @@ public class GyroController : MonoBehaviour
 #endif
         //左右移動の処理
         Move ();
+
+        CheckRotation ();
     }
 
     private void FixedUpdate ()
@@ -99,6 +101,25 @@ public class GyroController : MonoBehaviour
            0,
            0
         );
+        //もしも、移動範囲を超えていたら戻す
+        if (transform.position.x > maxMoveRange)
+        {
+            transform.position = new Vector3 (maxMoveRange - 0.01f, 0, 0);
+            rb.velocity = Vector3.zero;
+        }
+        else if (transform.position.x < -maxMoveRange)
+        {
+            transform.position = new Vector3 (-maxMoveRange + 0.01f, 0, 0);
+            rb.velocity = Vector3.zero;
+        }
+    }
+
+    private void CheckRotation ()
+    {
+        if(Mathf.Abs(playerRotZ) > 50f)
+        {
+            GameObject.Find ("GameManager").SendMessage ("OnGameOver");
+        }
     }
 
     //角度が180°より大きいときは、-180〜0°に変換

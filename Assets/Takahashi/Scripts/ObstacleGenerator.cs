@@ -34,10 +34,10 @@ public class ObstacleGenerator : MonoBehaviour
         stage_I = (GameObject)Resources.Load ("StagePattern/StageI");
         stage_J = (GameObject)Resources.Load ("StagePattern/StageJ");
 
-        Pattern_generator (0, 0);
+        Pattern_generator (0, 10);
         for (int i = 1 ; i < num ; i++)
         {
-            Pattern_generator (Random.Range (1, 10), i * 10);
+            Pattern_generator (Random.Range (1, 10), i * 10 + 10);
         }
     }
 
