@@ -28,6 +28,8 @@ public class GyroController : MonoBehaviour
     //物理挙動
     private Rigidbody rb;
 
+    [SerializeField] private GameManager gameManager;
+
     //デバイスの傾きのZ軸を格納する変数
     private float deviceRotZ, playerRotZ;
 
@@ -42,19 +44,25 @@ public class GyroController : MonoBehaviour
 
     private void Update ()
     {
+        if (gameManager.gameState == GameState.PLAYING)
+        {
 #if UNITY_EDITOR    //エディタで動いているとき
-        //キーボード操作で傾く処理
-        EditorLean ();
+            //キーボード操作で傾く処理
+            EditorLean ();
 
 #else   //エディタではないとき
         //ジャイロで傾く処理
         Lean ();
 
 #endif
-        //左右移動の処理
-        Move ();
+            //左右移動の処理
+            Move ();
 
-        CheckRotation ();
+            CheckRotation ();
+        }
+        else{
+            gravity = 3f;
+          }
     }
 
     private void FixedUpdate ()
