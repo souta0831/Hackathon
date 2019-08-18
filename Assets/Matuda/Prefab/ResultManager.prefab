@@ -43,7 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b6ccfd912d7294fa28b172f794d16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Result_Score: {fileID: 4819438381983514463, guid: bfe92548ab2b5bf4581188fc322f7ba3,
-    type: 3}
-  SceneChange_obj: {fileID: 2089778058662680556, guid: a4d0ac708369f374da84f89e98fa6dee,
+  SceneChange_obj: {fileID: 4138481341507672223, guid: 7039cd486e6655046b383bf083c26680,
     type: 3}

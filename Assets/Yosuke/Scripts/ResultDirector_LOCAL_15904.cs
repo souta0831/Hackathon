@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ResultDirector : MonoBehaviour
+public class ResultDirector_LOCAL_15904 : MonoBehaviour
 {
 
     public GameObject titleButton;

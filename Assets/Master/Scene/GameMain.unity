@@ -112,6 +112,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &230935224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6344529295113942584, guid: b17112f53c7517a48956f57211eabe98,
+    type: 3}
+  m_PrefabInstance: {fileID: 6344529294761843407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &230935226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230935224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57b440cc0e0a4f4caea6a8071d26416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _on: {fileID: 21300000, guid: 8e0da3d9ba14fca4e821411010792b78, type: 3}
+  _off: {fileID: 21300000, guid: 8159fa97478ee5e46bdbb8d434366ba0, type: 3}
+  _my_pedar_state: 1
+  manager: {fileID: 419662531}
 --- !u!1 &392429682
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +239,7 @@ GameObject:
   - component: {fileID: 424437448}
   - component: {fileID: 424437447}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +259,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -615,6 +637,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc8c1c64326be4842a0a5ec72e10238a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2039317983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6344529293499844261, guid: b17112f53c7517a48956f57211eabe98,
+    type: 3}
+  m_PrefabInstance: {fileID: 6344529294761843407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039317985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039317983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57b440cc0e0a4f4caea6a8071d26416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _on: {fileID: 21300000, guid: fffb71cbb7fe30e41a1466f43f0f37b2, type: 3}
+  _off: {fileID: 21300000, guid: ba1b192a8963c4b4bb64ccc21b8d9e09, type: 3}
+  _my_pedar_state: 0
+  manager: {fileID: 419662531}
 --- !u!1001 &827326718998638614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -627,6 +671,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedManager
       objectReference: {fileID: 0}
+    - target: {fileID: 827326718579178197, guid: 26c36b5ddc7f28b4a8794319e750ce08,
+        type: 3}
+      propertyPath: _game_manager
+      value: 
+      objectReference: {fileID: 887064063}
     - target: {fileID: 827326718579178194, guid: 26c36b5ddc7f28b4a8794319e750ce08,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -761,6 +810,11 @@ PrefabInstance:
       propertyPath: gravity
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8152865711173132875, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 887064063}
     - target: {fileID: 2993484818584575485, guid: dccd4ef4c249a4ad2b889acf08a45bd0,
         type: 3}
       propertyPath: animSpeed
@@ -965,7 +1019,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 419662531}
+      objectReference: {fileID: 2039317985}
+    - target: {fileID: 6344529293499844258, guid: b17112f53c7517a48956f57211eabe98,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
     - target: {fileID: 6344529294833010000, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1000,11 +1059,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 419662531}
+      objectReference: {fileID: 230935226}
+    - target: {fileID: 6344529295113942582, guid: b17112f53c7517a48956f57211eabe98,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344529294833010031, guid: b17112f53c7517a48956f57211eabe98,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9cab6a2f725fc46a197c0fbd55903d72,
+        type: 3}
     - target: {fileID: 7905454905322952876, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
       propertyPath: end_alpha
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6391458656129428013, guid: b17112f53c7517a48956f57211eabe98,
         type: 3}
