@@ -21,15 +21,23 @@ public class TitleTouch : MonoBehaviour
         {
 #if UNITY_EDITOR
 
-            if (Input.GetMouseButtonDown(0)) Instantiate(obj);
+            if (Input.GetMouseButtonDown(0))
+            {
+                Instantiate(obj);
+                IsTap = true;
 
+            }
 
 #else
-        if (Input.touchCount > 0)   Instantiate(obj);
+        if (Input.touchCount > 0){ 
+            
+                Instantiate(obj);
+                IsTap = true;
+
+            };
 
       
 #endif
-            IsTap = true;
         }
 
     }
