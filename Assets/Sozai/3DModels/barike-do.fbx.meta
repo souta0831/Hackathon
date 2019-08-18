@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7162a3c2adb484161b5ab8284721283e
+guid: 14840a76b07e04a67895524376992fa5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -23,7 +23,7 @@ ModelImporter:
     400014: polySurface8
     400016: transform1
     400018: transform2
-    2100000: asi1
+    2100000: asi
     2300000: pCube1
     2300002: polySurface5
     2300004: polySurface6
