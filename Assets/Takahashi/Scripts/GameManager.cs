@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject result;
+
     public void OnGameOver ()
     {
-        SceneManager.LoadScene ("Title");
+        Instantiate (result);
     }
 }
