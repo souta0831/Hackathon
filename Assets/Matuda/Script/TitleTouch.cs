@@ -6,6 +6,8 @@ public class TitleTouch : MonoBehaviour
 {
     [SerializeField]
     GameObject obj;
+    private bool IsTap = false;
+
     void Start()
     {
         
@@ -15,16 +17,28 @@ public class TitleTouch : MonoBehaviour
     void Update()
     {
 
+        if (!IsTap)
+        {
 #if UNITY_EDITOR
 
-        if (Input.GetMouseButtonDown(0)) Instantiate(obj);
+            if (Input.GetMouseButtonDown(0))
+            {
+                Instantiate(obj);
+                IsTap = true;
 
+            }
 
 #else
-        if (Input.touchCount > 0)   Instantiate(obj);
+        if (Input.touchCount > 0){ 
+            
+                Instantiate(obj);
+                IsTap = true;
+
+            };
 
       
 #endif
+        }
 
     }
 }

@@ -7,25 +7,27 @@ public class Result : MonoBehaviour
 {
 
     [SerializeField]
-    Text　Result_Score;
-    [SerializeField]
-    GameObject obj;
+    private GameObject SceneChange_obj;
     void Start()
     {
-        Result_Score.text = "結果発表:"+ GameObject.Find("SpeedManager").GetComponent<ScoreManager>()._now_score.ToString()+"M";
+
+        GameObject temp=GameObject.Find("ResultScoreText");
+        temp.GetComponent<ScoreText>().OnStart();
+        Debug.Log("Test");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //タップしたらシーン遷移
 #if UNITY_EDITOR
 
-        if (Input.GetMouseButtonDown(0)) Instantiate(obj);
+        if (Input.GetMouseButtonDown(0)) Instantiate(SceneChange_obj);
 
 
 #else
-        if (Input.touchCount > 0)   Instantiate(obj);
+        if (Input.touchCount > 0)   Instantiate(SceneChange_obj);
 
       
 #endif
