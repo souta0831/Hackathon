@@ -109,7 +109,6 @@ public class obstacle_generator : MonoBehaviour
     {
         if (obstacle_list[0].transform.position.z <= -5f)
         {
-
             if (score_manager_script._now_score <= 500) // 500M以下の時
             {
                 Pattern_generator(Random.Range(0, 3), obstacle_list[num - 1].transform.position.z + 10f);

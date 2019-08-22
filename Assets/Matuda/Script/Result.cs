@@ -12,7 +12,7 @@ public class Result : MonoBehaviour
     GameObject obj;
     void Start()
     {
-        Result_Score.text = "結果発表:"+GameObject.Find("SpeedManager").GetComponent<ScoreManager>()._now_score.ToString()+"M";
+        Result_Score.text = "結果発表:"+ GameObject.Find("SpeedManager").GetComponent<ScoreManager>()._now_score.ToString()+"M";
     }
 
     // Update is called once per frame
