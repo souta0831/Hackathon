@@ -18,7 +18,7 @@ using UnityEngine.UI;
     // Update is called once per frame
     void Update()
     {
-        _now_score += Pedal.GetNowSpeed()/100 ;
+        _now_score += Pedal.GetNowSpeed()/1000 ;
         DrawText.text =  (int)_now_score+"m";
     }
 }

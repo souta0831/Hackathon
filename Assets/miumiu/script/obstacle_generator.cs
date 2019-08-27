@@ -110,15 +110,15 @@ public class obstacle_generator : MonoBehaviour
         if (obstacle_list[0].transform.position.z <= -5f)
         {
 
-            if (score_manager_script._now_score <= 500) // 500M以下の時
+            if (score_manager_script._now_score <= 100) // 500M以下の時
             {
                 Pattern_generator(Random.Range(0, 3), obstacle_list[num - 1].transform.position.z + 10f);
             }
-            else if (score_manager_script._now_score > 500 && score_manager_script._now_score <= 1000) // 501Mから1000Mまでの時
+            else if (score_manager_script._now_score > 100 && score_manager_script._now_score <= 500) // 501Mから1000Mまでの時
             {
                 Pattern_generator(Random.Range(3, 6), obstacle_list[num - 1].transform.position.z + 10f);
             }
-            else if (score_manager_script._now_score > 1000) // 1001M以上の時
+            else if (score_manager_script._now_score > 500) // 1001M以上の時
             {
                 Pattern_generator(Random.Range(3, 11), obstacle_list[num - 1].transform.position.z + 10f);
             }
